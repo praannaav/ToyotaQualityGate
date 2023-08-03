@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trim Quality Gate</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+          <h2>Login</h2>
+          <input type="text" id="username" placeholder="Username">
+          <input type="password" id="password" placeholder="Password">
+          <button type="button" onclick="login()">Login</button>
+          <div class="invalid-login-message" id="invalidLoginMessage">Invalid username or password.</div>
+        </div>
+      </div>
+    
+      <div class="logo-container">
+        <div class="logo">
+          <img src="toyota_logo.png" alt="Toyota Logo">
+        </div>
+      </div>
+      <div class="container" style="display: none;">
+        <div class="vehicle-select-card">
+          <h2 class="header">Select the Vehicle type</h2>
+          <div class="vehicle-buttons">
+            <button class="vehicle-button" onclick="selectVehicle(this)">Innova</button>
+            <button class="vehicle-button" onclick="selectVehicle(this)">Fortuner</button>
+            <button class="vehicle-button" onclick="selectVehicle(this)">CMPV</button>
+            <div class="invalid-submit-message" id="invalidSubmitMessage">Please select a vehicle type.</div>
+          </div>
+        </div>
+    
+        <div class="entry-card">
+          <h1 class="header">Trim Quality Gate</h1>
+          <div class="flex-container">
+            <div class="right-part">
+              <label for="input1">Enter the Body no:</label>
+              <input type="text" id="input1" required>
+              <label for="input2">Enter the Defect type:</label>
+              <input type="text" id="input2" required>
+              <button type="button" class="small-button" data-app="A" onclick="selectApp('A')">App A</button>
+              <button type="button" class="small-button" data-app="B" onclick="selectApp('B')">App B</button>
+              <button type="button" class="small-button" data-fun="A" onclick="selectFun('A')">Fun A</button>
+              <button type="button" class="small-button" data-fun="B" onclick="selectFun('B')">Fun B</button>
+              <button type="button" onclick="displayData()">Submit</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="display-card">
+          <h2 class="header">Check Sheet</h2>
+          <div class="data-list" id="previousEntries">
+            <table class="check-sheet-table">
+              <tr>
+                <th>Sl No</th>
+                <th>Vehicle</th>
+                <th>Body No</th>
+                <th>Defect Type</th>
+                <th>Rank</th>
+                <th>Action</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+    
+        <div class="logout-button">
+          <button class="edit-button delete-button" onclick="logout()">Logout</button>
+        </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .logo-container {
+      position: absolute;
+      top: 10px;
+    }
+    .logo img {
+      width: 150px; /* 20% increase in size */
+    }
+    .vehicle-select-card,
+    .entry-card,
+    .display-card {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    .header {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .vehicle-select-card h2,
+    .entry-card h1,
+    .display-card h2 {
+      margin-top: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .vehicle-select-card {
+      height: 180px;
+    }
+    .vehicle-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .vehicle-button {
+      margin: 5px;
+      padding: 10px 40px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .vehicle-button:hover {
+      background-color: #45a049;
+    }
+    .vehicle-button.blink-animation {
+      animation: blink-red 1s infinite;
+    }
+    @keyframes blink-red {
+      50% {
+        color: red;
+        background-color: #f7f7f7;
+      }
+    }
+    .space-between-cards {
+      margin-top: 20px;
+    }
+    .right-part {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .right-part label,
+    .right-part input,
+    .right-part button {
+      display: block;
+      margin: 10px auto;
+    }
+    .right-part input {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .right-part button {
+      width: 80%;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .right-part button:hover {
+      background-color: #45a049;
+    }
+    .data-list {
+      margin-top: 20px;
+      font-size: 14px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .check-sheet-table {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .check-sheet-table th {
+      padding: 10px;
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    .check-sheet-table td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    .check-sheet-table td:first-child {
+      width: 10%;
+    }
+    .check-sheet-table td:nth-child(2) {
+      width: 30%;
+    }
+    .check-sheet-table td:nth-child(3) {
+      width: 30%;
+    }
+    .check-sheet-table td:last-child {
+      width: 30%;
+    }
+    .blink-animation {
+      animation: blink-red 1s infinite;
+    }
+    @keyframes blink-red {
+      50% {
+        color: red;
+        background-color: #f7f7f7;
+      }
+    }
+    .invalid-submit-message {
+      color: red;
+      font-size: 14px;
+      display: none;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .edit-button {
+      padding: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .edit-button:hover {
+      background-color: #45a049;
+    }
+    .edit-button.delete-button {
+      background-color: #ff3333;
+    }
+    .edit-button.delete-button:hover {
+      background-color: #e62e2e;
+    }
+    .edit-button.save-button {
+      background-color: #3377ff;
+    }
+    .edit-button.save-button:hover {
+      background-color: #2e6be6;
+    }
+    /* Styles for the login page */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    .login-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .login-form input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-form button {
+      width: 100%;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background-color: #45a049;
+    }
+    .invalid-login-message {
+      color: red;
+      font-size: 14px;
+      display: none;
+      text-align: center;
+      margin-top: 10px;
+    }
